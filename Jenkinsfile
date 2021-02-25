@@ -11,9 +11,6 @@ pipeline {
     
     stages {
         stage('Build') {
-            script {
-        System.setProperty("org.jenkinsci.plugins.durabletask.BourneShellScript.HEARTBEAT_CHECK_INTERVAL", "86400");
-    }
             steps {
                 sh 'npm install'
             }
